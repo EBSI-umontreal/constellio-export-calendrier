@@ -1,0 +1,54 @@
+
+/* Mise en page 3 colonnes
+   Source : https://www.w3schools.com/howto/howto_css_three_columns.asp
+*/
+* {
+	box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 0px;
+	padding: 0px;
+}
+.left {
+	width: 15%;
+}
+.middle {
+	width: 30%;
+}
+.right {
+	width: 55%;
+}
+/* Clear floats after the columns */
+	.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Ajustements pour l'export Constellio */
+.titre {
+	width: 85%;
+}
+
+.ligne3{
+	margin-top:0.5em;
+}
+
+sup{
+	font-size: xx-small;
+}
+
+
+.tabreg *{
+	text-align : center;
+}
+.tabreg_exemplaire{
+	text-align : left;
+}
+.tabreg_exemplaire, .tabreg_support, .tabreg_a, .tabreg_sa, .tabreg_i{
+	padding : 0 5px 0 5px;
+}

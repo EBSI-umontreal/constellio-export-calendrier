@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="calendrier-conservation.xslt" ?>
+<ROWSET>
+  <ROW>
+    <ID_ORGANISME />
+    <NUMREGLE>01110</NUMREGLE>
+    <TYPE_TRANS>A</TYPE_TRANS>
+    <RECUEIL />
+    <TITRESER>Dossier de gestion (organisation de l'enseignement)</TITRESER>
+    <REFLEGALE />
+    <NO_RECUEIL />
+    <PROCACTIVI>Dossier de gestion (organisation de l'enseignement)</PROCACTIVI>
+    <CODECLASS>01110</CODECLASS>
+    <NOMUNITE>unités administratives responsables</NOMUNITE>
+    <DESCSERIE />
+    <TYPESDOC />
+    <DOCUMESSEN>N</DOCUMESSEN>
+    <DOCUMCONFI>O</DOCUMCONFI>
+    <REMARQDELA>R1: 2 ans après la fermeture du dossier ou le remplacement d'un document par une nouvelle version
+R2: Verser aux archives les documents témoignant de l'administration générale de l'enseignement. Éliminer les autres documents.</REMARQDELA>
+    <REMARQGEN />
+    <GRILLECHAN>N</GRILLECHAN>
+    <DELAI>
+      <DELAI_ROW>
+        <NUMDELAI />
+        <NUMREGLE>01110</NUMREGLE>
+        <TYPEDOSS>P</TYPEDOSS>
+        <SUPPDOSS>dm, pa</SUPPDOSS>
+        <PERIOACTIF>2</PERIOACTIF>
+        <REM_PERIOACTIF>R1</REM_PERIOACTIF>
+        <PERIOSMACT>5</PERIOSMACT>
+        <ID_REF_DISPOSITION>T</ID_REF_DISPOSITION>
+        <REM_DISPOINACT>R2</REM_DISPOINACT>
+      </DELAI_ROW>
+      <DELAI_ROW>
+        <NUMDELAI />
+        <NUMREGLE>01110</NUMREGLE>
+        <TYPEDOSS>S</TYPEDOSS>
+        <SUPPDOSS>dm, pa</SUPPDOSS>
+        <PERIOACTIF>2</PERIOACTIF>
+        <REM_PERIOACTIF>R1</REM_PERIOACTIF>
+        <PERIOSMACT>0</PERIOSMACT>
+        <ID_REF_DISPOSITION>D</ID_REF_DISPOSITION>
+      </DELAI_ROW>
+    </DELAI>
+  </ROW>
+  <ROW>
+    <ID_ORGANISME />
+    <NUMREGLE>01120</NUMREGLE>
+    <TYPE_TRANS>A</TYPE_TRANS>
+    <RECUEIL />
+    <TITRESER>Calendrier universitaire</TITRESER>
+    <REFLEGALE />
+    <NO_RECUEIL />
+    <PROCACTIVI>Calendrier universitaire</PROCACTIVI>
+    <CODECLASS>01120</CODECLASS>
+    <NOMUNITE>unités administratives responsables</NOMUNITE>
+    <DESCSERIE />
+    <TYPESDOC />
+    <DOCUMESSEN>N</DOCUMESSEN>
+    <DOCUMCONFI>N</DOCUMCONFI>
+    <REMARQDELA>R1: Verser aux archives la version finale du calendrier universitaire. Éliminer les autres documents.</REMARQDELA>
+    <REMARQGEN />
+    <GRILLECHAN>N</GRILLECHAN>
+    <DELAI>
+      <DELAI_ROW>
+        <NUMDELAI />
+        <NUMREGLE>01120</NUMREGLE>
+        <TYPEDOSS>P</TYPEDOSS>
+        <SUPPDOSS>dm, pa</SUPPDOSS>
+        <PERIOACTIF>2</PERIOACTIF>
+        <PERIOSMACT>0</PERIOSMACT>
+        <ID_REF_DISPOSITION>T</ID_REF_DISPOSITION>
+        <REM_DISPOINACT>R1</REM_DISPOINACT>
+      </DELAI_ROW>
+      <DELAI_ROW>
+        <NUMDELAI />
+        <NUMREGLE>01120</NUMREGLE>
+        <TYPEDOSS>S</TYPEDOSS>
+        <SUPPDOSS>dm, pa</SUPPDOSS>
+        <PERIOACTIF>2</PERIOACTIF>
+        <PERIOSMACT>0</PERIOSMACT>
+        <ID_REF_DISPOSITION>D</ID_REF_DISPOSITION>
+      </DELAI_ROW>
+    </DELAI>
+  </ROW>
+  <ROW>
+    <ID_ORGANISME />
+    <NUMREGLE>01740a</NUMREGLE>
+    <TYPE_TRANS>A</TYPE_TRANS>
+    <RECUEIL />
+    <TITRESER>Plagiat et fraude</TITRESER>
+    <REFLEGALE />
+    <NO_RECUEIL />
+    <PROCACTIVI>Plagiat et fraude</PROCACTIVI>
+    <CODECLASS>01740</CODECLASS>
+    <NOMUNITE>unités administratives responsables</NOMUNITE>
+    <DESCSERIE>Contenu : dossier constitué lorsqu’un étudiant est traduit devant le Comité de discipline de l’UdeM, documents relatifs à la constatation de l’infraction, la dénonciation, l’enquête, la plainte, la convocation de l’étudiant, l’audition, la décision du comité de discipline, l’appel et les sanctions ou décisions finales appliquées.</DESCSERIE>
+    <TYPESDOC />
+    <DOCUMESSEN>N</DOCUMESSEN>
+    <DOCUMCONFI>O</DOCUMCONFI>
+    <REMARQDELA>1: Jusqu'après l'expiration du délai d'appel, le rejet ou le retrait d'une plainte (plainte non fondée).
+2: Verser aux archives les statistiques sur les cas de plagiat et fraude pour une période donnée si elles existent.
+
+Consulter les instructions pour les documents hautement confidentiels.</REMARQDELA>
+    <REMARQGEN />
+    <GRILLECHAN>N</GRILLECHAN>
+    <DELAI>
+      <DELAI_ROW>
+        <NUMDELAI />
+        <NUMREGLE>01740a</NUMREGLE>
+        <TYPEDOSS>P</TYPEDOSS>
+        <SUPPDOSS>dm, pa</SUPPDOSS>
+        <PERIOACTIF>888</PERIOACTIF>
+        <REM_PERIOACTIF>R1</REM_PERIOACTIF>
+        <PERIOSMACT>15</PERIOSMACT>
+        <ID_REF_DISPOSITION>T</ID_REF_DISPOSITION>
+        <REM_DISPOINACT>R2</REM_DISPOINACT>
+      </DELAI_ROW>
+      <DELAI_ROW>
+        <NUMDELAI />
+        <NUMREGLE>01740a</NUMREGLE>
+        <TYPEDOSS>S</TYPEDOSS>
+        <SUPPDOSS>dm, pa</SUPPDOSS>
+        <PERIOACTIF>888</PERIOACTIF>
+        <REM_PERIOACTIF>R1</REM_PERIOACTIF>
+        <PERIOSMACT>0</PERIOSMACT>
+        <ID_REF_DISPOSITION>D</ID_REF_DISPOSITION>
+      </DELAI_ROW>
+    </DELAI>
+  </ROW>
+</ROWSET>

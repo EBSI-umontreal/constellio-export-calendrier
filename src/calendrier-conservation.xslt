@@ -77,6 +77,7 @@
 				<xsl:call-template name="uppercase">
 					<xsl:with-param name="text" select="SUPPDOSS"/>
 				</xsl:call-template>
+				<xsl:apply-templates select="REM_SUPPDOSS"/>
 			</td>
 			<!-- périodes et ajout de liens vers les remarques (si elles existent) -->
 			<td>
@@ -95,7 +96,7 @@
 	</xsl:template>
 	
 	<!-- ajouter le lien vers une remarque sous la forme d'un exposant -->
-	<xsl:template match="REM_PERIOACTIF|REM_PERIOSMACT|REM_DISPOINACT">
+	<xsl:template match="REM_SUPPDOSS|REM_PERIOACTIF|REM_PERIOSMACT|REM_DISPOINACT">
 		<sup><xsl:value-of select="."/></sup>
 	</xsl:template>
 	

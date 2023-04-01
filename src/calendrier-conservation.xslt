@@ -3,6 +3,7 @@
 	<xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
 	<xsl:template match="/">
+		<xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;&#10;</xsl:text>
 		<html>
 			<head>
 				<title>Calendrier de conservation</title>
@@ -34,14 +35,13 @@
 		</div>
 		
 		<!-- 2e ligne : Description de la règle -->
-		<p><xsl:apply-templates select="DESCSERIE"/></p>
+		<xsl:apply-templates select="DESCSERIE"/>
 		
 		<!-- 3e ligne : Détenteurs, calendrier et remarques -->
 		<div class="row ligne3">
 			<div class="column left"><p>&#x20;</p></div>
 			<div class="column middle">
-				<b>Détenteurs principaux :</b><br/>
-				<xsl:value-of select="NOMUNITE"/>
+				<xsl:apply-templates select="NOMUNITE"/>
 			</div>
 			<div class="column right">
 				<table class="tabreg">
@@ -95,6 +95,15 @@
 		</tr>
 	</xsl:template>
 	
+	<!-- Afficher les détenteurs principaux avec un retour à la ligne s'il y en a plusieurs -->
+	<xsl:template match="NOMUNITE">
+		<b>Détenteurs principaux :</b><br/>
+		<xsl:call-template name="replace-newline">
+			<xsl:with-param name="text" select="."/>
+			<xsl:with-param name="aremplacer" select="';'"/>
+		</xsl:call-template>
+	</xsl:template>
+	
 	<!-- ajouter le lien vers une remarque sous la forme d'un exposant -->
 	<xsl:template match="REM_SUPPDOSS|REM_PERIOACTIF|REM_PERIOSMACT|REM_DISPOINACT">
 		<sup><xsl:value-of select="."/></sup>
@@ -127,12 +136,14 @@
 	<!-- Fonction permettant de transformer les retours à la ligne de la sortie XML en <br/> pour les champs textuels longs -->
 	<xsl:template name="replace-newline">
 		<xsl:param name="text"/>
+		<xsl:param name="aremplacer" select="'&#xA;'"/>
 		<xsl:choose>
-			<xsl:when test="contains($text, '&#xA;')">
-				<xsl:value-of select="substring-before($text, '&#xA;')"/>
+			<xsl:when test="contains($text, $aremplacer)">
+				<xsl:value-of select="substring-before($text, $aremplacer)"/>
 				<br/>
 				<xsl:call-template name="replace-newline">
-					<xsl:with-param name="text" select="substring-after($text, '&#xA;')"/>
+					<xsl:with-param name="text" select="substring-after($text, $aremplacer)"/>
+					<xsl:with-param name="aremplacer" select="$aremplacer"/>
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:otherwise>
